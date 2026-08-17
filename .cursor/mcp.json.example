@@ -3,7 +3,7 @@
     "oxil-ai-engine": {
       "url": "https://oxil.tringuyencse.com/sse",
       "headers": {
-        "Authorization": "Bearer oxil_sec_9e7f82a1b4c3d5e6f708192a3b4c5d6e7f8a9b0c"
+        "Authorization": "Bearer {YOUR_OXIL_API_KEY}"
       }
     }
   }

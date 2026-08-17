@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "oxil-ai-engine": {
+      "$typeName": "exa.cascade_plugins_pb.CascadePluginCommandTemplate",
+      "command": "python3",
+      "args": [
+        "{ABSOLUTE_PATH_TO_ENGINE}/app/mcp_server.py",
+        "--stdio"
+      ],
+      "env": {
+        "PYTHONPATH": "{ABSOLUTE_PATH_TO_ENGINE}"
+      }
+    }
+  }
+}
