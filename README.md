@@ -54,14 +54,19 @@
 ---
 
 ### C. Cấu hình cho Antigravity IDE
-Trong workspace của bạn, tạo hoặc cập nhật file `mcp_config.json`:
+Trong workspace của bạn, tạo file `.agents/mcp_config.json` (hoặc mở `~/.gemini/config/mcp_config.json`):
 ```json
 {
   "mcpServers": {
     "oxil-ai-engine": {
-      "url": "https://oxil.tringuyencse.com/sse",
-      "headers": {
-        "Authorization": "Bearer oxil_sec_9e7f82a1b4c3d5e6f708192a3b4c5d6e7f8a9b0c"
+      "$typeName": "exa.cascade_plugins_pb.CascadePluginCommandTemplate",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "args": [
+        "/Users/tringuyencse/Projects/AI/oxil-ai-engine/app/mcp_server.py",
+        "--stdio"
+      ],
+      "env": {
+        "PYTHONPATH": "/Users/tringuyencse/Projects/AI/oxil-ai-engine"
       }
     }
   }
